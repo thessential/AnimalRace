@@ -12,3 +12,5 @@ i then created object that used the makeAnimal function.
 create a while loop so i could visually see the race.
 
 then i console log the ending of the race declaring winner and loooser  by calling the object with report function.
+
+had advice given to me by my TA to help make make my functions do what i wanted.
