@@ -1,0 +1,48 @@
+
+<script>
+
+function iSpie(){
+    var userInGameGuess;
+    var computerSpies;
+    var userRandInput1;
+    var userRandInput2;
+    var userRandInput3;
+    var userYesResponse;
+    var alertRestart;
+    var play;
+    var yes;
+    var cont;
+
+    computerSpies=Math.random();
+
+    userRandInput1=prompt("Observe the Room. Type one thing you see. Dont tell anybody");
+            
+    userRandInput2=prompt("What else do you spie?");
+
+    userRandInput3=prompt("Whats the last object?");
+            
+    console.log("Thank you. The computer will now find these Objects in the room");
+
+    if(computerSpies<=.33){
+        computerSpies=userRandInput1;
+    }
+    else if(computerSpies===.66){
+        computerSpies=userRandInput2;
+    }
+    else{
+        computerSpies=userRandInput3;
+    }
+
+    userInGameGuess=prompt("Now remember your objects. They were: "+"a(n)"+" "+ userRandInput1 +", a(n)"+ " "+ userRandInput2+" "+"a(n) "+ userRandInput3 +"."+" The computer has finished finding your object. Can you guess which one???");
+
+    if(userInGameGuess===computerSpies){
+        alert("You guessed "+computerSpies+" that is correct!");
+    }
+    else{
+        alert("You gotta try harder");
+    }
+
+ }
+    iSpie();
+
+</script>
